@@ -27,8 +27,8 @@ export function generateSubtitle(
     safePath(excutePath), 
     [
       "-t", safePath(filePath), 
-      "--device", config.device || "cpu", 
-      "--whisper-model", config.whisperModel || "tiny",
+      "--device", config.device || "cuda", 
+      "--whisper-model", config.whisperModel || "cuda",
       "--lang", config.lang || "zh",
     ],
   )

@@ -4,9 +4,7 @@ import path from "path"
 
 export function useAutoCut(){
   const excutePath = computed(() => path.join(
-    configStore.installPath, 
-    "autocut", 
-    `autocut${os.platform().indexOf("win") === 0? ".exe" : ""}`,
+    `autocut`,
   ))
   const autocutStatus = computed(() => statusStore.autocutStatus)
   

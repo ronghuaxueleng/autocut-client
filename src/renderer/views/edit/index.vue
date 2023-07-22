@@ -41,6 +41,10 @@ const MODEL_SIZE = [
     name: "large",
     value: "large",
   },
+  {
+    name: "large-v2",
+    value: "large-v2",
+  },
 ]
 
 const DEVICE = [
@@ -48,11 +52,10 @@ const DEVICE = [
     name: "CPU",
     value: "cpu",
   },
-  // 暂时不支持使用 GPU
-  // {
-  //   name: "GPU",
-  //   value: "cuda",
-  // },
+  {
+    name: "GPU",
+    value: "cuda",
+  },
 ]
 
 /**
@@ -61,8 +64,8 @@ const DEVICE = [
 const filePath = ref("")
 const config = reactive({
   lang: "zh",
-  size: "tiny",
-  device: "cpu",
+  size: "large-v2",
+  device: "cuda",
 })
 
 /**

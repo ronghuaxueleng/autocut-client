@@ -40,7 +40,7 @@ export function ffmpegCheck() {
  */
 export function autocutCheck(excutePath:string){
   return new Promise<boolean>((resolve, reject) => {
-    const commad = `"${safePath(excutePath)}" -h`
+    const commad = `autocut -h`
     const autocut = exec(commad)
     let success = false
     autocut.stdout.on("data", (res) => {
