@@ -1,5 +1,5 @@
 export type AutocutConfig = {
   device: "cpu" | "cuda",
-  whisperModel: "tiny" | "base" | "small" | "medium" | "large" | "large-v2",
+  whisperModel: "tiny" | "base" | "small" | "medium" | "large",
   lang: "en" | "zh" | "ja",
 }

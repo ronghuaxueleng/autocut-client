@@ -34,6 +34,11 @@ const openFFmpeg = ()=>{
       leading-6"
     >
       <div>{{ autocutStatus ? t("autocutInstalled.success") : t("autocutInstalled.error")}}</div>
+      <div>
+        <a href="/#/setup/autocut" @click.prevent.stop="$router.push('/setup/autocut')">
+          {{ t("autocutInstalled.tip") }}
+        </a>
+      </div>
     </div>
     <div>
       <button 
